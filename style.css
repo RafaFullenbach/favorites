@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+
+  --bg-color: hsl(0, 0%, 0%);
+  --t-color: hsl(194, 72%, 13%);
+  --trow-color: hsl(191, 65%, 7%);
+  --trow-color-dark: hsla(194, 64%, 6%, 0.502);
+  --t-border-color: hsl(191, 31%, 42%);
+  --btn-color: hsl(195, 91%, 25%);
+  --btn-color-hover: hsl(0, 0%, 100%);
+  --bg-input-color: hsl(191, 65%, 7%);
+  --placeholder-color: hsl(240, 6%, 51%);
+  --text-color: hsl(240, 9%, 89%);
+  --remove-color: hsl(355, 91%, 66%);
+  --button-bg-transparent: hsla(0, 0%, 100%, 0);
+}
+
+button,
+input {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  color: var(--text-color);
+
+  background-color: var(--bg-color);
+
+  padding: 11.5rem 16rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+
+  padding: 0;
+  margin: -1px;
+  border-width: 0;
+
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
+header input {
+  font-size: 1.6rem;
+  color: var(--text-color);
+
+  background-color: var(--bg-input-color);
+
+  width: 46rem;
+
+  padding: 1.6rem;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+header input::placeholder {
+  color: var(--placeholder-color);
+}
+
+header button {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+
+  background-color: var(--btn-color);
+
+  padding: 1.2rem 3.2rem;
+  border-radius: 0.5rem;
+  border: none;
+
+  color: var(--btn-color-hover);
+  text-transform: uppercase;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+header button:hover {
+  background-color: var(--btn-color-hover);
+  color: var(--btn-color);
+}
+
+header button:hover svg path {
+  fill: var(--btn-color);
+}
+
+main {
+  margin-top: 8.7rem;
+}
+
+table {
+  width: 100%;
+
+  border-collapse: collapse;
+  border: 1px solid var(--t-border-color);
+}
+
+table * {
+  font-size: 2rem;
+  color: var(--text-color);
+  font-weight: 700;
+}
+
+table th {
+  font-size: 2rem;
+  text-align: left;
+
+  background-color: var(--t-color);
+
+  padding: 1.6rem 4rem;
+}
+
+table tr:nth-child(odd) {
+  background: var(--trow-color-dark);
+}
+
+table tr:nth-child(even) {
+  background: var(--trow-color);
+  border: 1px solid var(--t-border-color);
+}
+
+table td {
+  padding: 2.4rem 4rem;
+  text-align: left;
+}
+
+td.user {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+td.user img {
+  width: 5rem;
+  height: 5rem;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+}
+
+td.user p {
+  font-weight: 700;
+}
+
+td.user a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+td .remove {
+  color: var(--remove-color);
+
+  background-color: var(--button-bg-transparent);
+
+  border: none;
+
+  cursor: pointer;
+}
