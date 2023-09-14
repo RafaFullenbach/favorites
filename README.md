@@ -1,6 +1,9 @@
 # Github favorites
 
 The goal of the project is to learn about advanced Javascript.
+
+https://github.com/RafaFullenbach/favorites/assets/63618616/3865937c-8414-42d1-afc8-4d60324349fc
+
 ## Apprenticeship
 
 - High Order Functions;
